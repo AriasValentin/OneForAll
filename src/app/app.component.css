@@ -1,6 +1,5 @@
-#pieDepagina {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
+body{
+    background-image: url("./images/1330376.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

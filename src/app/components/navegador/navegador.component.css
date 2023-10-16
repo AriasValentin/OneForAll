@@ -1,7 +1,9 @@
 #navegador{
     background-color:#97ce4c ;
-    text-align: center;
     color: #44281d;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .enlace-nav{
