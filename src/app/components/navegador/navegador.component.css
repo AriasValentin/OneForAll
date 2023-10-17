@@ -2,12 +2,8 @@
     background-color:#97ce4c ;
     color: #44281d;
     display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.enlace-nav{
-    background-color:	#f0e14a;
-    color:#e89ac7 ;
-    margin: 10px ;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-family: "Pickle Rick", sans-serif;
 }
