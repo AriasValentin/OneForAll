@@ -1,0 +1,9 @@
+#navegador{
+    background-color:#97ce4c ;
+    color: #44281d;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-family: "Pickle Rick", sans-serif;
+}

@@ -1,0 +1,43 @@
+#formulario{
+    background-color: rgb(36, 243, 153);
+    text-align: center;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%; /* Ajusta el valor del ancho según tus necesidades */
+    margin: 0 auto;
+}
+#boton{
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
