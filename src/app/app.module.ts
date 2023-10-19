@@ -7,17 +7,21 @@ import { FormularioLoginComponent } from './components/formulario-login/formular
 
 import { FooterComponent } from './components/footer/footer.component';
 import { NavegadorComponent } from './components/navegador/navegador.component';
+import { FormsModule } from '@angular/forms';
+import { FormularioRegistroComponent } from './components/formulario-registro/formulario-registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioLoginComponent,
     FooterComponent,
-    NavegadorComponent
+    NavegadorComponent,
+    FormularioRegistroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
