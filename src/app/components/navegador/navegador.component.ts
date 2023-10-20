@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Carta } from 'src/app/carta';
 
 @Component({
   selector: 'app-navegador',

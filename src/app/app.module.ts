@@ -13,7 +13,8 @@ import { NavegadorComponent } from './components/navegador/navegador.component';
     AppComponent,
     FormularioLoginComponent,
     FooterComponent,
-    NavegadorComponent
+    NavegadorComponent,
+
   ],
   imports: [
     BrowserModule,
