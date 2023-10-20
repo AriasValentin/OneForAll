@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeInicioComponent } from './pages/home-inicio/home-inicio.component';
+import { PaginaVisualizacionCartasComponent } from './pages/pagina-visualizacion-cartas/pagina-visualizacion-cartas.component';
+import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.component';
+import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
 
 const routes: Routes = [
-{path:"home",},
+{path:"home",component:HomeInicioComponent},
+{path:"vista-cartas",component:PaginaVisualizacionCartasComponent},
+{path:"vista-registros",component:RegistroVistaComponent},
+{path:"vista-carrito",component:CarritoVistaComponent},
 {path:"**", redirectTo:"home"}
 ];
 

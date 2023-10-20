@@ -7,6 +7,10 @@ import { FormularioLoginComponent } from './components/formulario-login/formular
 
 import { FooterComponent } from './components/footer/footer.component';
 import { NavegadorComponent } from './components/navegador/navegador.component';
+import { HomeInicioComponent } from './pages/home-inicio/home-inicio.component';
+import { PaginaVisualizacionCartasComponent } from './pages/pagina-visualizacion-cartas/pagina-visualizacion-cartas.component';
+import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.component';
+import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +18,10 @@ import { NavegadorComponent } from './components/navegador/navegador.component';
     FormularioLoginComponent,
     FooterComponent,
     NavegadorComponent,
+    HomeInicioComponent,
+    PaginaVisualizacionCartasComponent,
+    RegistroVistaComponent,
+    CarritoVistaComponent,
 
   ],
   imports: [

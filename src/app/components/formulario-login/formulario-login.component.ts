@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Usuario } from 'src/app/usuario';
+import { Usuario } from 'src/app/modules/usuario';
 
 @Component({
   selector: 'app-formulario-login',

@@ -7,7 +7,8 @@
     justify-content: center;
     align-items: center;
     width: 30%; /* Ajusta el valor del ancho según tus necesidades */
-    margin: 0 auto;
+    margin: 10px auto;
+    opacity: 90%;
 }
 #boton{
     width: 100%;

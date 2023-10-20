@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Carta } from 'src/app/carta';
+import { Carta } from 'src/app/modules/carta';
 
 @Component({
   selector: 'app-navegador',

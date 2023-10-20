@@ -5,4 +5,5 @@ export interface Carta{
     species: String;
     gender: String;
     image: String;
+    precio:Number;
 }
