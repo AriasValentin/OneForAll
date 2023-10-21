@@ -10,15 +10,21 @@
     margin: 10px auto;
     opacity: 90%;
 }
-#boton{
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.boton {
+  background-color: #00FF00; /* color de fondo verde */
+  color: #e02491; /* color de texto blanco */
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+.boton:hover {
+  background-color: #b946b9; /* color de fondo rosa al pasar el ratón */
+}
+
 input,
 textarea {
   width: 100%;
@@ -33,12 +39,4 @@ label {
   }
   .form-group {
     margin-bottom: 20px;
-  }
-  .container {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
