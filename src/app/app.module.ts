@@ -11,6 +11,8 @@ import { HomeInicioComponent } from './pages/home-inicio/home-inicio.component';
 import { PaginaVisualizacionCartasComponent } from './pages/pagina-visualizacion-cartas/pagina-visualizacion-cartas.component';
 import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.component';
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
+import { FormsModule } from '@angular/forms';
+import { FormularioRegistroComponent } from './components/formulario-registro/formulario-registro.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.compo
     RegistroVistaComponent,
     CarritoVistaComponent,
 
+    FormularioRegistroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
