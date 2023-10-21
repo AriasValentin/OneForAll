@@ -22,15 +22,17 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .boton:hover {
-  background-color: #b946b9; /* color de fondo rosa al pasar el ratón */
+  background-color: #dbc6db; /* color de fondo rosa al pasar el ratón */
 }
-
-input,
-textarea {
+.botonIngreso {
+  background-color: #97ce4c;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+.botonIngreso:hover{
+  background-color: #dbc6db;
 }
 
 label {

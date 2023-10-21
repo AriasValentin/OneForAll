@@ -13,23 +13,25 @@
 .Dform{ 
     display: grid;
     place-items: center;
-    padding:30px; /*la distancia que existe entre un componente y otro*/
+    padding:10px; /*la distancia que existe entre un componente y otro*/
     
 }
 
-input,
-textarea {
-  width: 50%;
+.botonIngreso {
+  background-color: #97ce4c;
+  width: 70%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+.botonIngreso:hover{
+  background-color: #dbc6db;
 }
 label {
     display: block;
     font-weight: bold;
     font-size: larger;
-    color: rgb(0, 0, 0);
-    background-color: rgba(65, 197, 42, 0.485);
+    background-color: #97ce4c;
     border-radius: 5px;
   }
 button{
