@@ -1,3 +1,4 @@
+import { Carrito } from "./carrito";
 import { Carta } from "./carta";
 
 export interface Usuario {
@@ -9,5 +10,6 @@ export interface Usuario {
     celular: Number;
     contraseña: String;
     cartasCompradas:Carta[];
+    carrito:Carrito;
 }
 
