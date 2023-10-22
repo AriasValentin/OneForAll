@@ -14,6 +14,12 @@ import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.compo
 import { FormsModule } from '@angular/forms';
 import { FormularioRegistroComponent } from './components/formulario-registro/formulario-registro.component';
 import { RouterModule , Route, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { UsuarioService } from './services/usuario.service';
+import { Carrito } from './modules/carrito';
+import { Usuario } from './modules/usuario';
+import { Carta } from './modules/carta';
+import { ConsumoApiService } from './services/consumo-api.service';
   
 
 @NgModule({
@@ -32,6 +38,8 @@ import { RouterModule , Route, Routes } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

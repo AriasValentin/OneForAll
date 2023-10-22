@@ -1,7 +1,9 @@
+import { OnInit } from "@angular/core";
 import { Carrito } from "./carrito";
 import { Carta } from "./carta";
 
 export interface Usuario {
+
     nombre: String;
     apellido: String;
     dni: Number;
@@ -11,5 +13,7 @@ export interface Usuario {
     contraseña: String;
     cartasCompradas:Carta[];
     carrito:Carrito;
+
+
 }
 
