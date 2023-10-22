@@ -5,12 +5,13 @@ import { PaginaVisualizacionCartasComponent } from './pages/pagina-visualizacion
 import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.component';
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
 
+
 const routes: Routes = [
 {path:"home",component:HomeInicioComponent},
-{path:"vista-cartas",component:PaginaVisualizacionCartasComponent},
-{path:"vista-registros",component:RegistroVistaComponent},
+{path:"vista-cartas",component: PaginaVisualizacionCartasComponent},
+{path:"vista-registros",component: RegistroVistaComponent},
 {path:"vista-carrito",component:CarritoVistaComponent},
-{path:"**", redirectTo:"home"}
+{path:"**", redirectTo:"home",pathMatch :"full"}
 ];
 
 

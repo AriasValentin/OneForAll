@@ -13,6 +13,8 @@ import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.co
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
 import { FormsModule } from '@angular/forms';
 import { FormularioRegistroComponent } from './components/formulario-registro/formulario-registro.component';
+import { RouterModule , Route, Routes } from '@angular/router';
+  
 
 @NgModule({
   declarations: [
@@ -24,13 +26,12 @@ import { FormularioRegistroComponent } from './components/formulario-registro/fo
     PaginaVisualizacionCartasComponent,
     RegistroVistaComponent,
     CarritoVistaComponent,
-
     FormularioRegistroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

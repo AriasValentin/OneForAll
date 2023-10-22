@@ -1,3 +1,5 @@
+import { Carta } from "./carta";
+
 export interface Usuario {
     nombre: String;
     apellido: String;
@@ -6,5 +8,6 @@ export interface Usuario {
     direccion: String;
     celular: Number;
     contraseña: String;
+    cartasCompradas:Carta[];
 }
 
