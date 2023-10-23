@@ -20,6 +20,7 @@ import { Carrito } from './modules/carrito';
 import { Usuario } from './modules/usuario';
 import { Carta } from './modules/carta';
 import { ConsumoApiService } from './services/consumo-api.service';
+import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
   
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ConsumoApiService } from './services/consumo-api.service';
     PaginaVisualizacionCartasComponent,
     RegistroVistaComponent,
     CarritoVistaComponent,
-    FormularioRegistroComponent
+    FormularioRegistroComponent,
+    MarcoCartaComponent
   ],
   imports: [
     BrowserModule,
