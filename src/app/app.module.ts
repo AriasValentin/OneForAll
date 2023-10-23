@@ -21,6 +21,7 @@ import { Usuario } from './modules/usuario';
 import { Carta } from './modules/carta';
 import { ConsumoApiService } from './services/consumo-api.service';
 import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
+import { ListarCartaComponent } from './components/listar-carta/listar-carta.component';
   
 
 @NgModule({
@@ -34,7 +35,8 @@ import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
     RegistroVistaComponent,
     CarritoVistaComponent,
     FormularioRegistroComponent,
-    MarcoCartaComponent
+    MarcoCartaComponent,
+    ListarCartaComponent
   ],
   imports: [
     BrowserModule,
