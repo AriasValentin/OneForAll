@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './marco-carta.component.html',
   styleUrls: ['./marco-carta.component.css']
 })
-export class MarcoCartaComponent implements OnInit {
+export class MarcoCartaComponent implements OnInit 
+{
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
+
   }
 
 }
