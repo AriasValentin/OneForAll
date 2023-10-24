@@ -6,17 +6,33 @@ import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.co
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
 
 
-const routes: Routes = [
-{path:"home",component:HomeInicioComponent},
-{path:"vista-cartas",component: PaginaVisualizacionCartasComponent},
-{path:"vista-registros",component: RegistroVistaComponent},
-{path:"vista-carrito",component:CarritoVistaComponent},
-{path:"**", redirectTo:"home",pathMatch :"full"}
+const routes : Routes = [
+  {
+    path: '', component: HomeInicioComponent
+  },
+  {
+    path: 'vistaRegisto', component: RegistroVistaComponent
+  },
+  {
+    path: 'vistaCartas', component: PaginaVisualizacionCartasComponent
+  },
+  {
+    path: 'home', component: HomeInicioComponent
+  },
+  {
+    path: 'vistaCarrito', component: CarritoVistaComponent
+  },
+
+
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes),
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }
