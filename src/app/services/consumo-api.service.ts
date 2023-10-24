@@ -1,18 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
+import { Carta } from '../modules/carta';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ConsumoApiService implements OnInit{
+export class ConsumoApiService {
+
+  private url = "https://rickandmortyapi.com/api/character/2";
 
   constructor(private http :HttpClient) { }
 
-  ngOnInit(): void {
-    
-  }
-  public get(url:string){
-    return this.http.get(url) //GET A LA URL
+  obtenerdatos(items:[Carta]){
+
+    let carta =  this.http.get(this.url);
+    console.log(carta);
   }
 
 }

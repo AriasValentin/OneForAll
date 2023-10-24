@@ -4,19 +4,24 @@ import { HomeInicioComponent } from './pages/home-inicio/home-inicio.component';
 import { PaginaVisualizacionCartasComponent } from './pages/pagina-visualizacion-cartas/pagina-visualizacion-cartas.component';
 import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.component';
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
+import { CommonModule } from '@angular/common';
+import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
 
 
 const routes: Routes = [
-{path:"home",component:HomeInicioComponent},
+{path:"home",component: HomeInicioComponent},
 {path:"vista-cartas",component: PaginaVisualizacionCartasComponent},
-{path:"vista-registros",component: RegistroVistaComponent},
-{path:"vista-carrito",component:CarritoVistaComponent},
-{path:"**", redirectTo:"home",pathMatch :"full"}
+{path:"registro-vista",component: RegistroVistaComponent},
+{path:"carrito-vista",component:CarritoVistaComponent},
+{path: "pagNoEncontrada", component: PagNoEncontradaComponent},
+{path: '', redirectTo:"home",pathMatch :"full"}
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

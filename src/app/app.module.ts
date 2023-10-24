@@ -11,7 +11,7 @@ import { HomeInicioComponent } from './pages/home-inicio/home-inicio.component';
 import { PaginaVisualizacionCartasComponent } from './pages/pagina-visualizacion-cartas/pagina-visualizacion-cartas.component';
 import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.component';
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { FormularioRegistroComponent } from './components/formulario-registro/formulario-registro.component';
 import { RouterModule , Route, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -20,6 +20,7 @@ import { Carrito } from './modules/carrito';
 import { Usuario } from './modules/usuario';
 import { Carta } from './modules/carta';
 import { ConsumoApiService } from './services/consumo-api.service';
+import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
   
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ConsumoApiService } from './services/consumo-api.service';
     PaginaVisualizacionCartasComponent,
     RegistroVistaComponent,
     CarritoVistaComponent,
-    FormularioRegistroComponent
+    FormularioRegistroComponent,
+    PagNoEncontradaComponent,
   ],
   imports: [
     BrowserModule,

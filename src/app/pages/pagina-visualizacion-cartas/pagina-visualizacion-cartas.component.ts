@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConsumoApiService } from 'src/app/services/consumo-api.service';
 
 @Component({
   selector: 'app-pagina-visualizacion-cartas',

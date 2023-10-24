@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from 'src/app/modules/usuario';
 
 @Component({
   selector: 'app-home-inicio',

@@ -1,5 +1,7 @@
 body{
-    background-color: #e4a788;
+    background-image: url("./app/images/1330376.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 html, body {
     height: 100%;
