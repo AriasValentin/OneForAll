@@ -13,7 +13,7 @@ import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.co
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { FormularioRegistroComponent } from './components/formulario-registro/formulario-registro.component';
-import { RouterModule , Route, Routes } from '@angular/router';
+import { RouterModule , Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioService } from './services/usuario.service';
 import { Carrito } from './modules/carrito';
@@ -22,6 +22,8 @@ import { Carta } from './modules/carta';
 import { ConsumoApiService } from './services/consumo-api.service';
 import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
   
+
+
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encon
     HttpClientModule,
     
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
