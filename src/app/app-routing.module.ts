@@ -8,20 +8,34 @@ import { CommonModule } from '@angular/common';
 import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
 
 
-const routes: Routes = [
-{path:"home",component: HomeInicioComponent},
-{path:"vista-cartas",component: PaginaVisualizacionCartasComponent},
-{path:"registro-vista",component: RegistroVistaComponent},
-{path:"carrito-vista",component:CarritoVistaComponent},
-{path: "pagNoEncontrada", component: PagNoEncontradaComponent},
-{path: '', redirectTo:"home",pathMatch :"full"}
+const routes : Routes = [
+  {
+    path: '', component: HomeInicioComponent
+  },
+  {
+    path: 'vistaRegisto', component: RegistroVistaComponent
+  },
+  {
+    path: 'vistaCartas', component: PaginaVisualizacionCartasComponent
+  },
+  {
+    path: 'home', component: HomeInicioComponent
+  },
+  {
+    path: 'vistaCarrito', component: CarritoVistaComponent
+  },
+
+
 ];
 
 
 @NgModule({
   imports: [
+    RouterModule.forRoot(routes),
     CommonModule,
-    RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }
