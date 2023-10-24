@@ -17,3 +17,4 @@ export class FormularioRegistroComponent implements OnInit {
   }
 
 }
+x 

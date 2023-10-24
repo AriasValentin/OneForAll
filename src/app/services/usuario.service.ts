@@ -13,9 +13,15 @@ export class UsuarioService {
 
   constructor() { }
 
-  crearUsuario(usuario:Usuario){
+  crearUsuario():void{
 
-    let boton = document.getElementById("boton")
+    let boton = document.getElementById("boton");
+    boton?.addEventListener("submit",()=>{
+
+      let apellido = document.getElementById("apellido");
+      let usuario: Usuario;
+
+    })
 
   }
 

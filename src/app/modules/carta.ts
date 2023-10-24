@@ -7,3 +7,6 @@ export interface Carta{
     image: String;
     precio:Number;
 }
+
+
+
