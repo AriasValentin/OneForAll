@@ -6,6 +6,7 @@ import { RegistroVistaComponent } from './pages/registro-vista/registro-vista.co
 import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.component';
 import { CommonModule } from '@angular/common';
 import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
+import { UsuarioService } from './services/usuario.service';
 
 
 const routes : Routes = [
@@ -33,6 +34,7 @@ const routes : Routes = [
   imports: [
     RouterModule.forRoot(routes),
     CommonModule,
+    
   ],
   exports: [
     RouterModule

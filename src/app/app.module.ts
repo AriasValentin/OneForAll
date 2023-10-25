@@ -20,7 +20,8 @@ import { Carta } from './modules/carta';
 import { ConsumoApiService } from './services/consumo-api.service';
 import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
 import { FormsModule } from '@angular/forms';
-
+import { CarritoService } from './services/carrito.service';
+import { CartaService } from './services/carta.service';
 
 
 
@@ -44,11 +45,18 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+  
     
   ],
 
-  providers: [],
+  providers: [
+    UsuarioService,
+    CarritoService,
+    CartaService,
+    ConsumoApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
