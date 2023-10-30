@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validator } from '@angular/forms';
 import { Usuario } from 'src/app/modules/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { Carrito } from 'src/app/modules/carrito';
@@ -16,6 +16,8 @@ import { Carrito } from 'src/app/modules/carrito';
 export class FormularioRegistroComponent  {
 
   forms : FormGroup;
+
+  /* UsuServ : UsuarioService; */
 
   constructor(private formUsuario : FormBuilder){
     this.forms = this.formUsuario.group({
@@ -40,7 +42,7 @@ export class FormularioRegistroComponent  {
     }
    
      console.log(Usu);
-     localStorage.setItem('Usuario', JSON.stringify(Usu));
+     localStorage.setItem(Usu.email, JSON.stringify(Usu));
 
   }
 }
