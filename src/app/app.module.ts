@@ -24,6 +24,7 @@ import { CarritoService } from './services/carrito.service';
 import { CartaService } from './services/carta.service';
 import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,4 +57,3 @@ import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
- g3

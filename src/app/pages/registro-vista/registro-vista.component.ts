@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
@@ -6,6 +6,8 @@ import { UsuarioService } from 'src/app/services/usuario.service';
   templateUrl: './registro-vista.component.html',
   styleUrls: ['./registro-vista.component.css']
 })
-export class RegistroVistaComponent {
+export class RegistroVistaComponent implements OnInit{
+
+  constructor
 
 }
