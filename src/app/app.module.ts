@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+
+ import { AppRoutingModule } from './app-routing.module'; 
 import { AppComponent } from './app.component';
 import { FormularioLoginComponent } from './components/formulario-login/formulario-login.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -22,7 +23,7 @@ import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encon
 import { FormsModule } from '@angular/forms';
 import { CarritoService } from './services/carrito.service';
 import { CartaService } from './services/carta.service';
-import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
+/* import { MarcoCartaComponent } from './marco-carta/marco-carta.component'; */
 
 
 @NgModule({
@@ -36,16 +37,15 @@ import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
     RegistroVistaComponent,
     CarritoVistaComponent,
     FormularioRegistroComponent,
-    PagNoEncontradaComponent,
-    MarcoCartaComponent,
+
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    
+
   ],
 
   providers: [
