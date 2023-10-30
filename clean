@@ -1,0 +1,205 @@
+[33mcommit 87a2e0ff23da0385d6fa711450393d0373248375[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 6e03b47 2660fa2
+Author: LuchoDMD <lucio.mdq21@gmail.com>
+Date:   Mon Oct 30 09:27:02 2023 -0300
+
+    cambios lucho
+
+[33mcommit 6e03b473d36b10dc40f4e3f14fbda47a0eb5d80f[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Tue Oct 24 22:25:41 2023 -0300
+
+    ****
+
+[33mcommit 91f3fd8a30f6f1333e09a0cebfe3aa2d1bd7ebc3[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Tue Oct 24 22:24:44 2023 -0300
+
+    no puedo domirrrrrrr.
+
+[33mcommit 60b241227e28a238ef77f2a2a22ad9e05a3688ec[m
+Merge: 8aafad9 cd97c9c
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Tue Oct 24 19:46:28 2023 -0300
+
+    Merge branch 'main' of https://github.com/AriasValentin/OneForAll
+
+[33mcommit 8aafad9e58ea0ca28146ef8c144fc99227a0be2c[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Tue Oct 24 19:45:56 2023 -0300
+
+    cambios despues de los de gero
+
+[33mcommit 2660fa2ab7e500c551d4cc55af09107a69744aea[m[33m ([m[1;31morigin/rama-Luciano[m[33m)[m
+Author: LuchoDMD <lucio.mdq10@gmail.com>
+Date:   Tue Oct 24 15:21:58 2023 -0300
+
+    24-10 cambiando marco-tarjeta
+
+[33mcommit cd97c9cf9ba3d47e2a3fb5f9c24b040c1be529a8[m
+Merge: 5867690 061cae9
+Author: GeronimoOrofino <geroorofino@gmail.com>
+Date:   Tue Oct 24 13:19:01 2023 -0300
+
+    Merge branch 'rama-GeronimoOrofino'
+
+[33mcommit 5867690a4adf2c21a931fa88ed68d41920b88b4c[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Tue Oct 24 12:33:52 2023 -0300
+
+    cambios
+
+[33mcommit 061cae9b2be0122b6d9d7a020c41e05ed86d0ff6[m[33m ([m[1;31morigin/rama-GeronimoOrofino[m[33m)[m
+Author: GeronimoOrofino <geroorofino@gmail.com>
+Date:   Tue Oct 24 12:24:09 2023 -0300
+
+    actualizando las vistas
+
+[33mcommit 65225f68da8f1a69e0215623d67efec44c1139f5[m
+Author: LuchoDMD <lucio.mdq10@gmail.com>
+Date:   Mon Oct 23 17:30:03 2023 -0300
+
+    subiendo los ultimos cambios 23-10
+
+[33mcommit d3cefe58aeaa9d6070b7d28759c461926f047894[m
+Author: LuchoDMD <lucio.mdq21@gmail.com>
+Date:   Mon Oct 23 09:47:40 2023 -0300
+
+    agregar componente listar-carta
+
+[33mcommit abb1f759314dfac5229f0e0208651fdb77640e87[m
+Author: LuchoDMD <lucio.mdq21@gmail.com>
+Date:   Mon Oct 23 09:44:10 2023 -0300
+
+    agreando componente marco-carta
+
+[33mcommit 0ae95be2ac3ea440ee47137de88e80b04f27a5e0[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sun Oct 22 18:32:15 2023 -0300
+
+    ya estoy cansado
+
+[33mcommit 35bacc74d8a6496ea9063ac6553a990293bd8ded[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sun Oct 22 18:05:48 2023 -0300
+
+    clases
+
+[33mcommit e7f546668c6b705b3d11853632a3a09b1c25ce87[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sat Oct 21 21:38:46 2023 -0300
+
+    cambios de enrutamiento e icono
+
+[33mcommit 2999e726077d58e490c0e95fb2f4c77648d97384[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sat Oct 21 18:17:05 2023 -0300
+
+    rutas
+
+[33mcommit d04b4b9ed4b7e3ef6a472afcb953215413a529c3[m
+Merge: 43d973b 12f1c50
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sat Oct 21 17:29:32 2023 -0300
+
+    cambios
+
+[33mcommit 43d973b8ff9f772b139f042c8605a1cf52388018[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sat Oct 21 17:22:50 2023 -0300
+
+    cambios nav
+
+[33mcommit 12f1c504d770605327c37d6f66c49913cd6cb6cf[m
+Merge: 1113e8f 1e00d0b
+Author: GeronimoOrofino <geroorofino@gmail.com>
+Date:   Sat Oct 21 14:38:35 2023 -0300
+
+    Merge branch 'rama-GeronimoOrofino'
+
+[33mcommit 1113e8f8c9478f6108a55edb7bd6cca4567ff8ae[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Fri Oct 20 12:50:12 2023 -0300
+
+    creacion de pag,vistas,clases y cositas..
+
+[33mcommit db21cd8f43d17dbab70167a5a6833d3e5fe6a663[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Thu Oct 19 22:43:55 2023 -0300
+
+    Creacion de clases
+
+[33mcommit 1e00d0ba2cde5ff4cf9965ee3c6e80e864229dbd[m
+Author: GeronimoOrofino <geroorofino@gmail.com>
+Date:   Thu Oct 19 19:24:22 2023 -0300
+
+    actualizacion con vistas de registro
+
+[33mcommit 53a903ca097c6402e0d9c8a6b5effd179dd3896a[m
+Merge: 36f7bf9 087efb1
+Author: GeronimoOrofino <geroorofino@gmail.com>
+Date:   Thu Oct 19 17:25:54 2023 -0300
+
+    Merge branch 'main' into rama-GeronimoOrofino
+
+[33mcommit 36f7bf9fd7a1dadf37ec377cd4826d5fcf67ddcc[m
+Author: GeronimoOrofino <geroorofino@gmail.com>
+Date:   Thu Oct 19 17:24:59 2023 -0300
+
+    Revert "Update app.module.ts"
+    
+    This reverts commit 2bb406cc285eaf96f5d3da6ec6fd7d31870f5a21.
+
+[33mcommit 2bb406cc285eaf96f5d3da6ec6fd7d31870f5a21[m
+Author: GeronimoOrofino <geroorofino@gmail.com>
+Date:   Wed Oct 18 23:00:28 2023 -0300
+
+    Update app.module.ts
+
+[33mcommit 087efb147141f991cc7d3417dc5b3bbee4c37a34[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Tue Oct 17 12:03:48 2023 -0300
+
+    cambios nav y footer
+
+[33mcommit fd3d2bd5c3e513fe7d508c8bc8f0bda4a84ab59f[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Mon Oct 16 19:17:31 2023 -0300
+
+    fondo
+
+[33mcommit 6dd510813a035ad9a8e59d3aafea470af88844d7[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Mon Oct 16 18:39:48 2023 -0300
+
+    mejorando componentes y paletas
+
+[33mcommit a3b0273b6ccbc0aa6789f5c9111338417a54c146[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Fri Oct 13 14:15:11 2023 -0300
+
+    cambios 2
+
+[33mcommit a956862ef6f51ac50ad9f8787a5529b7de58a1a9[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Fri Oct 13 14:08:43 2023 -0300
+
+    cambios
+
+[33mcommit d21eed29bd290c5b41068df390f447b914d4b676[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sun Oct 8 23:52:30 2023 -0300
+
+    cambios de angular con exito.
+
+[33mcommit 3312fe7c01d3908a6c2b74cce2a85f706b0e4c86[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Sat Oct 7 16:54:43 2023 -0300
+
+    se crearon carpetas
+
+[33mcommit d65031b2b83ebc46d876901c03737f2de83c6aeb[m[33m ([m[1;31morigin/rama-ValentinArias[m[33m)[m
+Author: Valentin Arias <ariasvalentin1422@gmail.com>
+Date:   Fri Oct 6 12:08:30 2023 -0300
+
+    first commit
