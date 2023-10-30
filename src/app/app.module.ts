@@ -45,6 +45,7 @@ import { CartaService } from './services/carta.service';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
 
   ],
 
