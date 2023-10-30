@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/modules/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
-import {Ngform} from '@angular/forms';
+import {NgForm} from '@angular/forms';
 
 
 @Component({
@@ -12,7 +12,7 @@ import {Ngform} from '@angular/forms';
 
 export class FormularioRegistroComponent implements OnInit {
 
-  constructor(private servicioUsuario: UsuarioService){}2
+  constructor(private servicioUsuario: UsuarioService){}
   
   ngOnInit(): void {
     
