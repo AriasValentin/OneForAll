@@ -18,6 +18,7 @@ import { Carrito } from './modules/carrito';
 import { Usuario } from './modules/usuario';
 import { Carta } from './modules/carta';
 import { ConsumoApiService } from './services/consumo-api.service';
+<<<<<<< HEAD
 import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
 import { FormsModule } from '@angular/forms';
 import { CarritoService } from './services/carrito.service';
@@ -25,6 +26,11 @@ import { CartaService } from './services/carta.service';
 
 
 
+=======
+import { MarcoCartaComponent } from './marco-carta/marco-carta.component';
+import { ListarCartaComponent } from './components/listar-carta/listar-carta.component';
+  
+>>>>>>> rama-Luciano
 
 @NgModule({
   declarations: [
@@ -37,8 +43,13 @@ import { CartaService } from './services/carta.service';
     RegistroVistaComponent,
     CarritoVistaComponent,
     FormularioRegistroComponent,
+<<<<<<< HEAD
     PagNoEncontradaComponent,
 
+=======
+    MarcoCartaComponent,
+    ListarCartaComponent
+>>>>>>> rama-Luciano
   ],
   imports: [
     BrowserModule,
