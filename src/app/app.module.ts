@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+ import { AppRoutingModule } from './app-routing.module'; 
 import { AppComponent } from './app.component';
 import { FormularioLoginComponent } from './components/formulario-login/formulario-login.component';
 
@@ -34,14 +34,16 @@ import { ConsumoApiService } from './services/consumo-api.service';
     PaginaVisualizacionCartasComponent,
     RegistroVistaComponent,
     CarritoVistaComponent,
-    FormularioRegistroComponent
+    FormularioRegistroComponent,
+
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    
+
   ],
 
   providers: [],
