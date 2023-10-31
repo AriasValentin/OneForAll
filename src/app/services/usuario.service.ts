@@ -27,6 +27,25 @@ export class UsuarioService {
     }
 
   }
+  mostrarUsuariosArreglo(){
+    console.log(this.usuarios);
+  }
+
+  setearUsuario (email : String){
+    for(let i = 0; i<this.usuarios.length; i++){
+      if(this.usuarios[i].email == email){
+        return this.usuarios[i];
+      }
+      if(i==this.usuarios.length){
+        return console.log('no esiste');
+      }
+    }
+  }
+  setearUsuarioUnico (){
+
+        console.log(this.usuarios);
+        return this.usuarios[0];
+  }
 
   
 }

@@ -7,6 +7,7 @@ import { CarritoVistaComponent } from './pages/carrito-vista/carrito-vista.compo
 import { CommonModule } from '@angular/common';
 import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
 import { UsuarioService } from './services/usuario.service';
+import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
 
 
 const routes : Routes = [
@@ -24,6 +25,9 @@ const routes : Routes = [
   },
   {
     path: 'vistaCarrito', component: CarritoVistaComponent
+  },
+  {
+    path: 'vistaPerfil', component: PerfilUsuarioComponent
   },
 
 

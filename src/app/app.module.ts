@@ -24,6 +24,7 @@ import { FormsModule } from '@angular/forms';
 import { CarritoService } from './services/carrito.service';
 import { CartaService } from './services/carta.service';
 import { NavRegistroExitosoComponent } from './components/nav-registro-exitoso/nav-registro-exitoso.component';
+import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
 /* import { MarcoCartaComponent } from './marco-carta/marco-carta.component'; */
 
 
@@ -39,6 +40,7 @@ import { NavRegistroExitosoComponent } from './components/nav-registro-exitoso/n
     CarritoVistaComponent,
     FormularioRegistroComponent,
     NavRegistroExitosoComponent,
+    PerfilUsuarioComponent,
 
   ],
   imports: [

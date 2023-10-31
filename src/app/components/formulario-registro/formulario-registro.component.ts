@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validator } from '@angular/forms';
 import { Usuario } from 'src/app/modules/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { Carrito } from 'src/app/modules/carrito';
+import { Route, Router } from '@angular/router';
 
 
 
@@ -19,7 +20,7 @@ export class FormularioRegistroComponent   {
 
   /* UsuServ : UsuarioService; */
 
-  constructor(private formUsuario : FormBuilder, private usuarioService : UsuarioService){
+  constructor(private formUsuario : FormBuilder, private usuarioService : UsuarioService, private route : Router){
     this.forms = this.formUsuario.group({
       nombre: '',
       dni: '',
@@ -46,6 +47,12 @@ export class FormularioRegistroComponent   {
       this.usuarioService.agregarUsuario(usuarioRegistro);
       localStorage.setItem(usuarioRegistro.email, JSON.stringify(usuarioRegistro));
       this.forms.reset();
+      this.route.navigate(['/home']);
+/* 
+      no se como traerme la variable nombre que se puso en el form hacia el perfil commponent. 
+      en caso de poder hacer eso, yo podria setear el usuario, borrarlo y editar su informacion
+      sin mencionar que con eso se podria visualizar las cartas entre vista y vista. ya que seteamos
+      al usuario en la vista correspondiente y extraemos sus cartas.  */
   }
 
 }

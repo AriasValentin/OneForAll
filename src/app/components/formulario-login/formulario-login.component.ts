@@ -26,10 +26,25 @@ export class FormularioLoginComponent  {
 
       if(localStorage.getItem(this.forms.value.nombreUsuario)){
         alert("Bienvenido a OneForMortys");
-        this.router.navigate(['/vistaCartas'])
+        //Ruta hacia el perfil del usuario, antes estaba la linea que figura comentada a continuacion
+        /* this.router.navigate(['/vistaCartas']) */
+        this.router.navigate(['/vistaPerfil'])
 
         //PRUEBA PARA VER SI ANDA EL API.
         this.apiService.conseguirDatos();
+
+
+        console.log(localStorage.getItem(this.forms.value.nombreUsuario));
+        
+        let jsonstring = localStorage.getItem(this.forms.value.nombreUsuario);
+        let usuario = null;
+        if(jsonstring){
+          usuario = JSON.parse(jsonstring);
+          console.log(usuario);
+          this.usuarioService.agregarUsuario(usuario);
+        }
+        
+        
       }
       else
       {
