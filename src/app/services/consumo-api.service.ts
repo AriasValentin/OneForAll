@@ -2,20 +2,34 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 import { Carta } from '../modules/carta';
 import { Observable } from 'rxjs';
+import { CartaService } from './carta.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConsumoApiService {
 
-  private url = "https://rickandmortyapi.com/api/character/2";
+  private url = "https://rickandmortyapi.com/api/character";
+
+  
     
 
-  constructor(private http :HttpClient) { }
+  constructor(private http :HttpClient , private cartaService : CartaService) { }
 
-  public getData(): Observable<any> {
-    return this.http.get<any>(this.url);
+
+  getCharacter(characterId: number) {
+    const url = `${this.url}/${characterId}`;
+    return this.http.get<any>(url);
   }
 
+  populateCard(card: Carta, characterId: number) {
+    this.getCharacter(characterId).subscribe(data => {
+      // Populate the card object with the data from the API
+      card.name = data.name;
+      card.species = data.species;
+      card.status = data.status;
+      // ... populate other properties as needed
+    });
+  }
 
 }
