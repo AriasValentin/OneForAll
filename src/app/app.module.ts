@@ -23,6 +23,7 @@ import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encon
 import { FormsModule } from '@angular/forms';
 import { CarritoService } from './services/carrito.service';
 import { CartaService } from './services/carta.service';
+import { NavRegistroExitosoComponent } from './components/nav-registro-exitoso/nav-registro-exitoso.component';
 /* import { MarcoCartaComponent } from './marco-carta/marco-carta.component'; */
 
 
@@ -37,6 +38,7 @@ import { CartaService } from './services/carta.service';
     RegistroVistaComponent,
     CarritoVistaComponent,
     FormularioRegistroComponent,
+    NavRegistroExitosoComponent,
 
   ],
   imports: [

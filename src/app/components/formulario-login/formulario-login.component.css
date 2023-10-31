@@ -6,13 +6,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%; /* Ajusta el valor del ancho según tus necesidades */
+    width: 30%; 
     margin: 10px auto;
     opacity: 90%;
 }
 .boton {
-  background-color: #00FF00; /* color de fondo verde */
-  color: #e02491; /* color de texto blanco */
+  background-color: #00FF00; 
+  color: #e02491; 
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   border: none;
@@ -22,7 +22,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .boton:hover {
-  background-color: #dbc6db; /* color de fondo rosa al pasar el ratón */
+  background-color: #dbc6db; 
 }
 .botonIngreso {
   background-color: #97ce4c;

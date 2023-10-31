@@ -18,30 +18,30 @@ export class ConsumoApiService {
   constructor(private http :HttpClient , private cartaService : CartaService) { }
 
 
-  getCharacter(characterId: number) {
+  getCharacter(characterId: number):Observable<any> {
     const url = `${this.url}/${characterId}`;
     return this.http.get<any>(url);
   }
 
-  sacarDatosCarta(carta: Carta, personajeID: number) {
-    this.getCharacter(personajeID).subscribe(data => {
-      // Populate the card object with the data from the API
-      carta.name = data.name;
-      carta.species = data.species;
-      carta.status = data.status;
-      // ... populate other properties as needed
-      
-      this.cartaService.agregarCarta(carta);
-    });
-  }
+  conseguirDatos() {
 
+    for(let i = 0 ; i < 10 ; i++){
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta ={
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        
+        this.cartaService.agregarCarta(carta);
 
-  recorrerCartas(){
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
 
-    for(let i = 0; i < 100 ; i++){
-
-      this.sacarDatosCarta(,i)
-
+      });
     }
   }
 
