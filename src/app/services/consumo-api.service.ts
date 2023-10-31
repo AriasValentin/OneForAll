@@ -9,10 +9,11 @@ import { CartaService } from './carta.service';
 })
 export class ConsumoApiService {
 
+
+
   private url = "https://rickandmortyapi.com/api/character";
 
   
-    
 
   constructor(private http :HttpClient , private cartaService : CartaService) { }
 
@@ -22,14 +23,26 @@ export class ConsumoApiService {
     return this.http.get<any>(url);
   }
 
-  populateCard(card: Carta, characterId: number) {
-    this.getCharacter(characterId).subscribe(data => {
+  sacarDatosCarta(carta: Carta, personajeID: number) {
+    this.getCharacter(personajeID).subscribe(data => {
       // Populate the card object with the data from the API
-      card.name = data.name;
-      card.species = data.species;
-      card.status = data.status;
+      carta.name = data.name;
+      carta.species = data.species;
+      carta.status = data.status;
       // ... populate other properties as needed
+      
+      this.cartaService.agregarCarta(carta);
     });
   }
 
-}
+
+  recorrerCartas(){
+
+    for(let i = 0; i < 100 ; i++){
+
+      this.sacarDatosCarta(,i)
+
+    }
+  }
+
+  };
