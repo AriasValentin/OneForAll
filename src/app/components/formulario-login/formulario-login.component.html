@@ -1,13 +1,13 @@
-<form action="" id="formulario">
+<form [formGroup]="forms" (ngSubmit)="ingresoUsuario()" id="formulario">
 
     <div class="form-group">
         <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" class="boton" required><br>
+        <input type="text" id="usuario" class="boton" formControlName="nombreUsuario" required><br>
     </div>
 
 <div class="form-group">
     <label for="password" >Contraseña</label>
-    <input type="password" id="password" class="boton" required><br>
+    <input type="password" id="password" class="boton" formControlName="password" required><br>
 </div>
 
 

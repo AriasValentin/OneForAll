@@ -13,13 +13,13 @@ import { Carrito } from 'src/app/modules/carrito';
   styleUrls: ['./formulario-registro.component.css']
 })
 
-export class FormularioRegistroComponent  {
+export class FormularioRegistroComponent   {
 
   forms : FormGroup;
 
   /* UsuServ : UsuarioService; */
 
-  constructor(private formUsuario : FormBuilder){
+  constructor(private formUsuario : FormBuilder, private usuarioService : UsuarioService){
     this.forms = this.formUsuario.group({
       nombre: '',
       dni: '',
@@ -29,9 +29,10 @@ export class FormularioRegistroComponent  {
     })
   }
   
+
   cargarUsuario(){
    
-   const Usu: Usuario = {
+   const usuarioRegistro: Usuario = {
     nombre : this.forms.value.nombre,
     dni : this.forms.value.dni,
     email : this.forms.value.email,
@@ -40,9 +41,11 @@ export class FormularioRegistroComponent  {
     cartasCompradas :[],
     carrito : {articulos:[],precioTotal :0}
     }
-   
-     console.log(Usu);
-     localStorage.setItem(Usu.email, JSON.stringify(Usu));
-
+    
+      console.log(usuarioRegistro);
+      this.usuarioService.agregarUsuario(usuarioRegistro);
+      localStorage.setItem(usuarioRegistro.email, JSON.stringify(usuarioRegistro));
+      this.forms.reset();
   }
+
 }
