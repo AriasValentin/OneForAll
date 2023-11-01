@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { PagNoEncontradaComponent } from './pages/pag-no-encontrada/pag-no-encontrada.component';
 import { UsuarioService } from './services/usuario.service';
 import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
+import { ModificarUsuarioComponent } from './components/modificar-usuario/modificar-usuario.component';
 
 
 const routes : Routes = [
@@ -29,6 +30,10 @@ const routes : Routes = [
   {
     path: 'vistaPerfil', component: PerfilUsuarioComponent
   },
+  {
+    path: 'modificarUsuario', component: ModificarUsuarioComponent
+  },
+
 
 
 ];

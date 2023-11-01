@@ -5,7 +5,19 @@
     </button>
 </div>
 <div>
-    <button>
+    <button (click)="llevarModificarUsuario()">
            Modificar perfil 
     </button>
+</div>
+<div class="maxView">
+    <div class="view">
+    <p>Nombre</p>
+    <p>{{usuario.nombre}}</p>
+    
+    <p>DNI</p>
+    <p>{{usuario.dni}}</p>
+    
+    <p>Email</p>
+    <p>{{usuario.email}}</p>
+    </div>
 </div>

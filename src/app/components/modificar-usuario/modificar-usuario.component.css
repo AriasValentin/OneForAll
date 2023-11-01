@@ -1,0 +1,51 @@
+.formulario{ 
+    background-image: url("src/app/images/legrick.jpeg");
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%; /* Ajusta el valor del ancho según tus necesidades */
+    height: 100%;/* Ajusta el valor del alto según tus necesidades */
+    margin: 0 auto;
+    
+}
+
+.Dform{ 
+    display: grid;
+    place-items: center;
+    padding:10px; /*la distancia que existe entre un componente y otro*/
+    
+}
+
+.botonIngreso {
+  background-color: #97ce4c;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.botonIngreso:hover{
+  background-color: #dbc6db;
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+    background-color: #97ce4c;
+    border-radius: 5px;
+  }
+button{
+    background-color: rgb(38, 120, 29);
+    border: 1px solid #000000;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px;
+}
+p{
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+    background-color: #4c9ece;
+    border-radius: 5px;
+    margin: 20px;
+}

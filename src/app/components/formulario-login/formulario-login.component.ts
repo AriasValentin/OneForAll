@@ -42,6 +42,7 @@ export class FormularioLoginComponent  {
           usuario = JSON.parse(jsonstring);
           console.log(usuario);
           this.usuarioService.agregarUsuario(usuario);
+          this.usuarioService.setearEmailUsuario(this.forms.value.nombreUsuario);
         }
         
         
