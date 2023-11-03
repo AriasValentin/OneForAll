@@ -26,6 +26,8 @@ import { CartaService } from './services/carta.service';
 import { NavRegistroExitosoComponent } from './components/nav-registro-exitoso/nav-registro-exitoso.component';
 import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
 import { ModificarUsuarioComponent } from './components/modificar-usuario/modificar-usuario.component';
+import { FiltradoCartasComponent } from './components/filtrado-cartas/filtrado-cartas.component';
+import { MarcoCartaComponent } from './components/marco-carta/marco-carta.component';
 /* import { MarcoCartaComponent } from './marco-carta/marco-carta.component'; */
 
 
@@ -43,6 +45,8 @@ import { ModificarUsuarioComponent } from './components/modificar-usuario/modifi
     NavRegistroExitosoComponent,
     PerfilUsuarioComponent,
     ModificarUsuarioComponent,
+    FiltradoCartasComponent,
+    MarcoCartaComponent
 
   ],
   imports: [

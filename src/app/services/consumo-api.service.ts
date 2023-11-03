@@ -23,11 +23,12 @@ export class ConsumoApiService {
     return this.http.get<any>(url);
   }
 
-  conseguirDatos() {
-
-    for(let i = 0 ; i < 10 ; i++){
+  conseguirDatos(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 10; i++) {
       this.getCharacter(i).subscribe(data => {
-        let carta: Carta ={
+        let carta: Carta = {
           id: data.id,
           name: data.name,
           status: data.status,
@@ -36,13 +37,12 @@ export class ConsumoApiService {
           image: data.image,
           precio: this.cartaService.precioRandom()
         }
-        
-        this.cartaService.agregarCarta(carta);
-
+        cartas.push(carta);
         console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
-
       });
     }
+  
+    return cartas;
   }
 
   };

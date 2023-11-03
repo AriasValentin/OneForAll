@@ -15,10 +15,10 @@ import { UsuarioService } from 'src/app/services/usuario.service';
 export class MarcoCartaComponent implements OnInit 
 {
 
-  constructor(private cartaService:CartaService, private consumoApiService: ConsumoApiService, private carritoService:CarritoService, private usuarioService:UsuarioService) { }
-
+  constructor(){}
   ngOnInit(): void 
   {
+    
 
   }
 

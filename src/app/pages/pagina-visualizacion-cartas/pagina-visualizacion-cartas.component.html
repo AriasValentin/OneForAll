@@ -1,4 +1,11 @@
 <app-nav-registro-exitoso></app-nav-registro-exitoso>
-
-
+<app-filtrado-cartas></app-filtrado-cartas>
+<div *ngFor="let carta of cartas" class="carta">
+    <img [src]="carta.image" alt="Imagen del personaje">
+    <h2>{{ carta.name }}</h2>
+    <p>Estado: {{ carta.status }}</p>
+    <p>Especie: {{ carta.species }}</p>
+    <p>Género: {{ carta.gender }}</p>
+    <p>Precio: {{ carta.precio }}</p>
+</div>
 <app-footer></app-footer>

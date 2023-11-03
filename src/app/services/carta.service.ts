@@ -32,6 +32,10 @@ export class CartaService {
     return randomNumber;
   }
 
+  getCartas():Carta[]{
+return this.listaCartas;
+  }
+
 
 
 }
