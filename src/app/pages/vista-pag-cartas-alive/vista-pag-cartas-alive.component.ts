@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ConsumoApiService } from 'src/app/services/consumo-api.service';
 import { MarcoCartaComponent } from 'src/app/components/marco-carta/marco-carta.component';
@@ -6,14 +7,16 @@ import { CartaService } from 'src/app/services/carta.service';
 import { Usuario } from 'src/app/modules/usuario';
 import { Route, Router } from '@angular/router';
 
-@Component({
-  selector: 'app-pagina-visualizacion-cartas',
-  templateUrl: './pagina-visualizacion-cartas.component.html',
-  styleUrls: ['./pagina-visualizacion-cartas.component.css']
-})
-export class PaginaVisualizacionCartasComponent implements OnInit{
 
-cartas:Carta[]=[];
+@Component({
+  templateUrl: './vista-pag-cartas-alive.component.html',
+  styleUrls: ['./vista-pag-cartas-alive.component.css']
+})
+export class VistaPagCartasAliveComponent {
+
+//FILTRO DE CARTAS POR STATUS
+cartasAlive:Carta[]=[];
+
 
 usuario: Usuario = {
   nombre : '',
@@ -28,10 +31,10 @@ constructor(private consumoApiService: ConsumoApiService, private consumoCartaSe
 
 ngOnInit(): void {
 
-  //GLOBAL
-    this.cartas = this.consumoApiService.conseguirDatos();
-    //STATUS
-    console.log(this.cartas);
+ 
+    this.cartasAlive = this.consumoApiService.conseguirDatosAlive();
+ 
+    console.log(this.cartasAlive);
 
     let login = sessionStorage.key(0);//login tiene la unica key que se guarda
     if(login){

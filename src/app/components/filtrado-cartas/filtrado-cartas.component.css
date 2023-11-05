@@ -12,7 +12,7 @@
     margin-bottom: 10px;
   }
   
-  button {
+  .opcion {
     margin-bottom: 5px;
     background-color: #27ae60;
     color: #fff;
@@ -21,7 +21,7 @@
     border-radius: 5px;
   }
   
-  button:hover {
+  a:hover {
     background-color: #2ecc71;
   }
 

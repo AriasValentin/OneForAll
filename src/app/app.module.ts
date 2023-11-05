@@ -28,6 +28,17 @@ import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuar
 import { ModificarUsuarioComponent } from './components/modificar-usuario/modificar-usuario.component';
 import { FiltradoCartasComponent } from './components/filtrado-cartas/filtrado-cartas.component';
 import { MarcoCartaComponent } from './components/marco-carta/marco-carta.component';
+import { VistaPagCartasAliveComponent } from './pages/vista-pag-cartas-alive/vista-pag-cartas-alive.component';
+import { VistaPagCartasDeadComponent } from './pages/vista-pag-cartas-dead/vista-pag-cartas-dead.component';
+import { VistaPagCartasUnknownComponent } from './pages/vista-pag-cartas-unknown/vista-pag-cartas-unknown.component';
+import { VistaPagCartasFemaleComponent } from './pages/vista-pag-cartas-female/vista-pag-cartas-female.component';
+import { VistaPagCartasMaleComponent } from './pages/vista-pag-cartas-male/vista-pag-cartas-male.component';
+import { VistaPagCartasGenderlssComponent } from './pages/vista-pag-cartas-genderlss/vista-pag-cartas-genderlss.component';
+import { VistaPagCartasUnkGENComponent } from './pages/vista-pag-cartas-unk-gen/vista-pag-cartas-unk-gen.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 /* import { MarcoCartaComponent } from './marco-carta/marco-carta.component'; */
 
 
@@ -46,7 +57,15 @@ import { MarcoCartaComponent } from './components/marco-carta/marco-carta.compon
     PerfilUsuarioComponent,
     ModificarUsuarioComponent,
     FiltradoCartasComponent,
-    MarcoCartaComponent
+    MarcoCartaComponent,
+    VistaPagCartasAliveComponent,
+    VistaPagCartasDeadComponent,
+    VistaPagCartasUnknownComponent,
+    VistaPagCartasFemaleComponent,
+    VistaPagCartasMaleComponent,
+    VistaPagCartasGenderlssComponent,
+    VistaPagCartasUnkGENComponent,
+    
 
   ],
   imports: [
@@ -56,6 +75,9 @@ import { MarcoCartaComponent } from './components/marco-carta/marco-carta.compon
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule
 
   ],
 

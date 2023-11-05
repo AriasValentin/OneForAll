@@ -26,7 +26,7 @@ export class ConsumoApiService {
   conseguirDatos(): Carta[] {
     let cartas: Carta[] = [];
   
-    for (let i = 0; i < 800; i++) {
+    for (let i = 0; i < 100; i++) {
       this.getCharacter(i).subscribe(data => {
         let carta: Carta = {
           id: data.id,
@@ -40,9 +40,176 @@ export class ConsumoApiService {
         cartas.push(carta);
         console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
       });
-    }
-  
+    } 
     return cartas;
   }
 
-  };
+
+  conseguirDatosAlive(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 100; i++) {
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta = {
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        if(carta.status == "Alive"){
+          cartas.push(carta);
+        }
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
+      });
+    } 
+    return cartas;
+  }
+
+
+  conseguirDatosDead(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 100; i++) {
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta = {
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        if(carta.status == "Dead"){
+          cartas.push(carta);
+        }
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
+      });
+    } 
+    return cartas;
+  }
+
+  conseguirDatosUnknown(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 100; i++) {
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta = {
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        if(carta.status == "unknown"){
+          cartas.push(carta);
+        }
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
+      });
+    } 
+    return cartas;
+  }
+
+
+  conseguirDatosFemale(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 100; i++) {
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta = {
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        if(carta.gender == "Female"){
+          cartas.push(carta);
+        }
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
+      });
+    } 
+    return cartas;
+  }
+
+  
+  conseguirDatosMale(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 100; i++) {
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta = {
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        if(carta.gender == "Male"){
+          cartas.push(carta);
+        }
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
+      });
+    } 
+    return cartas;
+  }
+
+    
+  conseguirDatosGenderless(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 100; i++) {
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta = {
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        if(carta.gender == "Genderless"){
+          cartas.push(carta);
+        }
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
+      });
+    } 
+    return cartas;
+  }
+
+  
+    
+  conseguirDatosUNKgen(): Carta[] {
+    let cartas: Carta[] = [];
+  
+    for (let i = 0; i < 100; i++) {
+      this.getCharacter(i).subscribe(data => {
+        let carta: Carta = {
+          id: data.id,
+          name: data.name,
+          status: data.status,
+          species: data.species,
+          gender: data.gender,
+          image: data.image,
+          precio: this.cartaService.precioRandom()
+        }
+        if(carta.gender == "unknown"){
+          cartas.push(carta);
+        }
+        console.log("esta es la info de la carta: " + this.cartaService.mostrarCarta(carta));
+      });
+    } 
+    return cartas;
+  }
+}
+

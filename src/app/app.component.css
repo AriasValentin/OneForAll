@@ -1,0 +1,45 @@
+.cartas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .carta {
+    flex: 0 0 calc(20% - 20px); /* Para mostrar 5 cartas por fila */
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(89, 196, 79, 0.733); /* Color verde moco semi transparente */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .parrafoImagen {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #dada1b9d; /* Color amarillo limón */
+  }
+  
+  .buy-button {
+    background-color: #03b1e6; /* Color celeste */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-button:hover {
+    background-color: #007bff; /* Color azul al pasar el mouse */
+  }

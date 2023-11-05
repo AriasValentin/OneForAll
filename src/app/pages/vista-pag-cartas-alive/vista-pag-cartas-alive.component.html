@@ -1,9 +1,8 @@
-<app-nav-registro-exitoso></app-nav-registro-exitoso>
+<app-navegador></app-navegador>
 <app-filtrado-cartas></app-filtrado-cartas>
-
 <div class="cartas-container cartas-grid">
   <div class="cartas-container">
-    <div *ngFor="let carta of cartas" class="carta">
+    <div *ngFor="let carta of cartasAlive" class="carta">
         <img [src]="carta.image" alt="Imagen del personaje" class="image">
         <h2>{{ carta.name }}</h2>
         <p class="parrafoImagen">Estado: {{ carta.status }}</p>
@@ -14,6 +13,5 @@
     </div>
   </div>
 </div>
-
 
 <app-footer></app-footer>
