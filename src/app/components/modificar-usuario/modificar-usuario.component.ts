@@ -23,10 +23,18 @@ export class ModificarUsuarioComponent implements OnInit{
   } 
 
   ngOnInit(): void {
-    let logueado = this.usuarioService.reconocerUsuarioLogueado();
-    //le da a la variable usuario, el usuario guardado en la posicion 0 del arreglo
+/*     let logueado = this.usuarioService.reconocerUsuarioLogueado();
     console.log("esto es logueado"+ logueado);
-    this.usu = this.usuarioService.setearUsuario(logueado);
+    this.usu = this.usuarioService.setearUsuario(logueado); */
+
+    let login = sessionStorage.key(0);//login tiene la unica key que se guarda
+    if(login){
+      let jsonsting = sessionStorage.getItem(login);//aca se obtiene el string Json desde el sesssion
+      if(jsonsting){
+        this.usu = JSON.parse(jsonsting);
+        console.log("esto es usuario "+ this.usu );//y aca se lo pasa a obj de tipo usuario
+      }
+    }
 
   }
   constructor(private usuarioService : UsuarioService, private route : Router, private formUsuario : FormBuilder){
@@ -47,6 +55,9 @@ export class ModificarUsuarioComponent implements OnInit{
 
      localStorage.removeItem(this.usu.email);
      localStorage.setItem(this.usu.email, JSON.stringify(this.usu));
+     sessionStorage.removeItem(this.usu.email);
+     sessionStorage.setItem(this.usu.email, JSON.stringify(this.usu));
+     
      this.forms.reset();
      this.route.navigate(['/vistaPerfil']);
   

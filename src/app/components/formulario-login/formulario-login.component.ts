@@ -11,8 +11,11 @@ import { Router } from '@angular/router';
   templateUrl: './formulario-login.component.html',
   styleUrls: ['./formulario-login.component.css']
 })
-export class FormularioLoginComponent  {
+export class FormularioLoginComponent implements OnInit {
 
+  ngOnInit(): void {
+    sessionStorage.clear();
+  }
   forms: FormGroup;
 
   constructor( private formBuilder : FormBuilder , private usuarioService : UsuarioService , private apiService: ConsumoApiService , private router:Router) {
@@ -43,6 +46,16 @@ export class FormularioLoginComponent  {
           console.log(usuario);
           this.usuarioService.agregarUsuario(usuario);
           this.usuarioService.setearEmailUsuario(this.forms.value.nombreUsuario);
+          /* //el session storage nos permite ingresar una key y un string (json), y que funcione similar
+          al local storage, con la diferencia de que si se cierra la pagina, se vacia el sessionstorage
+          los services tienen actualmente un problema de persistencia, ya que si intentamos acceder a
+          el usuario desde los articulos, no sera reconocido. si no me equivoco es por una cuestion 
+          de enrutamiento.*/
+
+          /* de momento encuentro mas util trabajar con el sessionStorage, pero todo puede ser modificado*/
+          sessionStorage.clear();//esto limpia el sessionstorage
+          sessionStorage.setItem(this.forms.value.nombreUsuario, jsonstring);//y esto lo guarda
+          
         }
         
         
