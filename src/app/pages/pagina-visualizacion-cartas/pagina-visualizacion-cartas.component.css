@@ -15,3 +15,12 @@
     font-size: 16px;
     margin-bottom: 5px;
   }
+  button {
+    border-radius: 20px;
+    border: rgba(82, 58, 30, 0.687) 5px outset;
+    font-weight: bolder;
+    width:10em;
+     height:3em; 
+    background-color: rgba(216, 165, 102, 0.871);
+    
+}

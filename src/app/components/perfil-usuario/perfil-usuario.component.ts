@@ -20,11 +20,21 @@ export class PerfilUsuarioComponent implements OnInit {
     carrito : {articulos:[],precioTotal :0}
   } 
  ngOnInit(): void {
-  let logueado = this.usuarioService.reconocerUsuarioLogueado();
-  //le da a la variable usuario, el usuario guardado en la posicion 0 del arreglo
-  console.log("esto es logueado"+ logueado);
-  this.usuario = this.usuarioService.setearUsuario(logueado);
+    /*  let logueado = this.usuarioService.reconocerUsuarioLogueado();
+      console.log("esto es logueado"+ logueado);
+      this.usuario = this.usuarioService.setearUsuario(logueado); */
 
+    /* aca  se vera la magia del sessionStorage */
+    
+    let login = sessionStorage.key(0);//login tiene la unica key que se guarda
+    if(login){
+      let jsonsting = sessionStorage.getItem(login);//aca se obtiene el string Json desde el sesssion
+      if(jsonsting){
+        this.usuario = JSON.parse(jsonsting);
+        console.log("esto es usuario "+ this.usuario );//y aca se lo pasa a obj de tipo usuario
+      }
+    }
+    
  }
   
 
@@ -36,6 +46,7 @@ export class PerfilUsuarioComponent implements OnInit {
     console.log("se elimino"+ this.usuario.email);
     //y te lleva hasta el inicio, porque si eliminas tu perfil, lo mas logico es que no puedas hacer nada mas
     this.route.navigate(['/home']);
+
   }
 
   llevarModificarUsuario(){
