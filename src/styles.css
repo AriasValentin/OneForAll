@@ -1,89 +1,49 @@
 body{
-    background-image: url("./app/images/1330376.png");
+    background-image: url("./app/images/1330376.png") ;
     background-size: cover;
     background-repeat: no-repeat;
 }
 html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
   }
 
-
-  
-
-  /*ESTO ES IMPORTANTE NO BORRAR.*/
-  .cartas-container {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-  }
-  /*ESTO TAMBIEN IMPORTANTE*/
-
-  .image {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-    width: 64px; /* Ancho deseado */
-    height: 64px; /* Alto deseado */
-    overflow: hidden; /* Recortar la imagen si es necesario */
-    margin: 0 auto; /* Centrar la imagen horizontalmente */
-  }
-  .cartas-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-.carta {
-  flex: 0 0 calc(10% - 20px); /* Para mostrar 5 cartas por fila */
-  margin: 10px;
-
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px; /* Achicar el relleno */
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: rgba(89, 196, 79, 0.733); /* Color verde moco semi transparente */
-  width: 200px; /* Ancho deseado */
-  height: 250px;
-  justify-content: center; /* Centrar verticalmente */
-  flex-wrap: wrap; /* Envolver las cartas en varias líneas */ /* Alto deseado */
-}
-
-/* Estilo para el marco de la imagen y reducir su tamaño a 64x64 */
-
-
-/* Estilo para la imagen dentro del marco */
-image {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Estilo para los párrafos de información de especie y género */
-.parrafoImagen {
-  font-size: 14px;
-  margin: 5px 0;
-  color: #dada1b9d; /* Color amarillo limón */
-}
-
-/* Estilo para el botón de compra */
-.card .buy-button {
-  background-color: #03b1e6; /* Color celeste */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* Cambiar el color del botón al pasar el mouse por encima */
-.card .buy-button:hover {
-  background-color: #007bff; /* Color azul al pasar el mouse */
-}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*ACA VAN STYLOS DE IMAGEN*/
+
+.carta {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.parrafoImagen {
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #00ff00;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00cc00;
+}

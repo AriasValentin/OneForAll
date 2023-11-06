@@ -1,7 +1,7 @@
 <app-nav-registro-exitoso></app-nav-registro-exitoso>
 <app-filtrado-cartas></app-filtrado-cartas>
 
-<div class="cartas-container cartas-grid">
+<div class="cartas-container">
   <div class="cartas-container">
     <div *ngFor="let carta of cartas" class="carta">
         <img [src]="carta.image" alt="Imagen del personaje" class="image">
@@ -14,6 +14,5 @@
     </div>
   </div>
 </div>
-
 
 <app-footer></app-footer>
