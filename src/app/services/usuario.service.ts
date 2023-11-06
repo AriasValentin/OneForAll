@@ -63,5 +63,17 @@ export class UsuarioService {
     return this.emailusuario;
   }
 
+  agregarAlCarrito(carta:Carta){
+    document.addEventListener("click",evento=>{
+      evento.preventDefault();
+
+      //ACA TRAES AL USUARIO !
+
+      // USUARIO.CARRITO.PUSH(carta);
+
+      //ACA CALCULO QUE VOLVES A CAGAR EL ARCHIVO DE USUARIO EN EL LOCAL CON LOS DATOS PISADOS
+    })
+  }
+
   
 }

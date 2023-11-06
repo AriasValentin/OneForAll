@@ -1,1 +1,17 @@
-<p>vista-pag-cartas-unknown works!</p>
+<app-navegador></app-navegador>
+<app-filtrado-cartas></app-filtrado-cartas>
+
+<app-filtrado-cartas></app-filtrado-cartas>
+<div class="cartas-container cartas-grid">
+  <div class="cartas-container">
+    <div *ngFor="let carta of cartasUNK" class="carta">
+        <img [src]="carta.image" alt="Imagen del personaje" class="image">
+        <h2>{{ carta.name }}</h2>
+        <p class="parrafoImagen">Estado: {{ carta.status }}</p>
+        <p class="parrafoImagen">Especie: {{ carta.species }}</p>
+        <p class="parrafoImagen">Género: {{ carta.gender }}</p>
+        <p class="parrafoImagen">Precio: {{ carta.precio }}</p>
+        <button (click)="loginOcarrito()">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
