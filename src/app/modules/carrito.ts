@@ -1,6 +1,6 @@
 import { Carta } from "./carta";
 
 export interface Carrito{
-    articulos:[]; 
+    articulos:Array<Carta>; 
     precioTotal:number;
 }
