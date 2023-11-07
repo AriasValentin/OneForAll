@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Carta } from 'src/app/modules/carta';
 import { Usuario } from 'src/app/modules/usuario';
 
@@ -33,11 +34,32 @@ export class CarritoUsuarioComponent implements OnInit{
 
   }
 
+  constructor (private route : Router){
+
+  }
+
   borrarDeseado(card : Carta){
-      console.log('borrado');
+    /* lo que sucede a continuacion es que se filtra el arreglo de articulos, eliminando el elemento
+    que es igual a la carta, tras ese filtrado se lo asigna a el listado de articulos en el carrito */
+    this.usuario.carrito.articulos = this.usuario.carrito.articulos.filter(elemento => elemento !== card);
+
+    localStorage.removeItem(this.usuario.email);
+    localStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
+    sessionStorage.removeItem(this.usuario.email);
+    sessionStorage.setItem(this.usuario.email, JSON.stringify(this.usuario));
+
+    /* hago que se elimine pero no en tiempo real. */
+
   }
   comprarDeseado(card : Carta){
-    console.log('comprado');
+
+    this.usuario.carrito.articulos = this.usuario.carrito.articulos.filter(elemento => elemento !== card);
+    this.usuario.cartasCompradas.push(card);
+
+    localStorage.removeItem(this.usuario.email);
+    localStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
+    sessionStorage.removeItem(this.usuario.email);
+    sessionStorage.setItem(this.usuario.email, JSON.stringify(this.usuario));
   }
 
 
