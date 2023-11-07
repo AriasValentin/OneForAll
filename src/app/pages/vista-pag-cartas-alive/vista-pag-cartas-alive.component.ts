@@ -29,38 +29,49 @@ usuario: Usuario = {
 } 
 constructor(private consumoApiService: ConsumoApiService, private consumoCartaService: CartaService,private route : Router) {}
 
-ngOnInit(): void {
+    ngOnInit(): void {
 
- 
-    this.cartasAlive = this.consumoApiService.conseguirDatosAlive();
- 
-    console.log(this.cartasAlive);
+    
+        this.cartasAlive = this.consumoApiService.conseguirDatosAlive();
+    
+        console.log(this.cartasAlive);
 
-    let login = sessionStorage.key(0);//login tiene la unica key que se guarda
-    if(login){
-      let jsonsting = sessionStorage.getItem(login);//aca se obtiene el string Json desde el sesssion
-      if(jsonsting){
-        this.usuario = JSON.parse(jsonsting);
-        console.log("esto es usuario "+ this.usuario );//y aca se lo pasa a obj de tipo usuario
+        let login = sessionStorage.key(0);//login tiene la unica key que se guarda
+        if(login){
+          let jsonsting = sessionStorage.getItem(login);//aca se obtiene el string Json desde el sesssion
+          if(jsonsting){
+            this.usuario = JSON.parse(jsonsting);
+            console.log("esto es usuario "+ this.usuario );//y aca se lo pasa a obj de tipo usuario
+          }
+        }
+      
+    }
+
+    loginOcarrito(card : Carta){
+      if (sessionStorage.length == 0){
+        this.route.navigate(['/home']);
+      }
+      else{
+        //let card : Carta
+        //tengo que poner cartas[indice en el que este] dentro de la linea de abajo. 
+
+        /* eso o poner el id de la carta que se esta mostrando en el html y usar el cardservice
+        o el apiconsumoservice para poner la carta dentro del push*/
+        
+        console.log("aca se agregara una carta al carrito" + this.usuario.carrito.articulos);
+        
+        this.usuario.carrito.articulos.push(card);
+
+        localStorage.removeItem(this.usuario.email);
+        localStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
+        sessionStorage.removeItem(this.usuario.email);
+        sessionStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
+
+        console.log("aca se agregara una carta al carrito" + this.usuario.carrito.articulos[2].gender);
+
+        console.log(this.usuario);
+
       }
     }
-  
-}
-
-  loginOcarrito(){
-    if (sessionStorage.length == 0){
-      this.route.navigate(['/home']);
-    }
-    else{
-      //let card : Carta
-      //tengo que poner cartas[indice en el que este] dentro de la linea de abajo. 
-
-      /* eso o poner el id de la carta que se esta mostrando en el html y usar el cardservice
-      o el apiconsumoservice para poner la carta dentro del push*/
-      console.log("aca se agregara una carta al carrito");
-       this.usuario.carrito.articulos.push(); 
-
-    }
-  }
 
 }

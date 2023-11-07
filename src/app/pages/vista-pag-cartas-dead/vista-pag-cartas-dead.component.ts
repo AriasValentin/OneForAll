@@ -46,21 +46,32 @@ ngOnInit(): void {
   
 }
 
-  loginOcarrito(){
-    if (sessionStorage.length == 0){
-      this.route.navigate(['/home']);
-    }
-    else{
-      //let card : Carta
-      //tengo que poner cartas[indice en el que este] dentro de la linea de abajo. 
-
-      /* eso o poner el id de la carta que se esta mostrando en el html y usar el cardservice
-      o el apiconsumoservice para poner la carta dentro del push*/
-      console.log("aca se agregara una carta al carrito");
-       this.usuario.carrito.articulos.push(); 
-
-    }
+loginOcarrito(card : Carta){
+  if (sessionStorage.length == 0){
+    this.route.navigate(['/home']);
   }
+  else{
+    //let card : Carta
+    //tengo que poner cartas[indice en el que este] dentro de la linea de abajo. 
+
+    /* eso o poner el id de la carta que se esta mostrando en el html y usar el cardservice
+    o el apiconsumoservice para poner la carta dentro del push*/
+    
+    console.log("aca se agregara una carta al carrito" + this.usuario.carrito.articulos);
+    
+    this.usuario.carrito.articulos.push(card);
+
+    localStorage.removeItem(this.usuario.email);
+    localStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
+    sessionStorage.removeItem(this.usuario.email);
+    sessionStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
+
+    console.log("aca se agregara una carta al carrito" + this.usuario.carrito.articulos[2].gender);
+
+    console.log(this.usuario);
+
+  }
+}
 
   
 
