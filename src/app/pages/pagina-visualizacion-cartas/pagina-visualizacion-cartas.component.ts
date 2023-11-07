@@ -56,7 +56,7 @@ ngOnInit(): void {
       o el apiconsumoservice para poner la carta dentro del push*/
       
       console.log("aca se agregara una carta al carrito" + this.usuario.carrito.articulos);
-      
+      alert("Carta agregada a tu carrito !");
        this.usuario.carrito.articulos.push(card);
 
        localStorage.removeItem(this.usuario.email);

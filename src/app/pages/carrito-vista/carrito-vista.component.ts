@@ -57,6 +57,7 @@ export class CarritoVistaComponent implements OnInit{
     }
     this.usuario.carrito.articulos = [];
 
+    alert("GRACIAS POR TU COMPRA")
     localStorage.removeItem(this.usuario.email);
     localStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
     sessionStorage.removeItem(this.usuario.email);
