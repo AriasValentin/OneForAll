@@ -12,8 +12,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%; /* Ajusta el valor del ancho según tus necesidades */
-    height: 100%;/* Ajusta el valor del alto según tus necesidades */
+    width: 40%;
+    height: 100%;
     margin: 0 auto;
     
 }
@@ -21,7 +21,7 @@ button {
 .maxView{ 
     display: grid;
     place-items: center;
-    padding:5px; /*la distancia que existe entre un componente y otro*/
+    padding:5px; 
     
 }
 p{

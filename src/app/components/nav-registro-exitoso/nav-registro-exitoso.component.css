@@ -1,6 +1,6 @@
 
 #navegador{
-    background-color: #97ce4c; /* color de fondo verde */
+    background-color: #97ce4c;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,7 +8,7 @@
   }
   
   .enlace-nav {
-    color: #FFFFFF; /* color de texto blanco */
+    color: #FFFFFF;
     font-family: "", sans-serif;
     font-size: 16px;
     text-decoration: none;
@@ -16,7 +16,7 @@
   }
   
   .enlace-nav:hover {
-    color: #FF00FF; /* color de texto rosa al pasar el ratón */
+    color: #FF00FF; 
   }
   
  #navegador img {

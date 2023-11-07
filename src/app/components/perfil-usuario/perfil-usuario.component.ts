@@ -42,10 +42,14 @@ export class PerfilUsuarioComponent implements OnInit {
   } 
 
   eliminarUsuario(){
-    localStorage.removeItem(this.usuario.email);
-    console.log("se elimino"+ this.usuario.email);
-    //y te lleva hasta el inicio, porque si eliminas tu perfil, lo mas logico es que no puedas hacer nada mas
-    this.route.navigate(['/home']);
+
+    let confirmacion = confirm("ESTAS SEGURO DE ELIMINAR TU CUENTA? SE PERDERAN TUS CARTAS Y TODO LO RELACIONADO A VOS..")
+    if(confirmacion){
+      localStorage.removeItem(this.usuario.email);
+      console.log("se elimino"+ this.usuario.email);
+      //y te lleva hasta el inicio, porque si eliminas tu perfil, lo mas logico es que no puedas hacer nada mas
+      this.route.navigate(['/home']);
+    }  
 
   }
 
