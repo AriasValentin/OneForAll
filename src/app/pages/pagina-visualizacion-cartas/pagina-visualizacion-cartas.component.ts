@@ -22,7 +22,7 @@ usuario: Usuario = {
   contraseña : '',
   contraseña2: '',
   cartasCompradas :[],
-  carrito : {articulos : [] , precioTotal :5}
+  carrito : {articulos : [] , precioTotal :0}
 } 
 constructor(private consumoApiService: ConsumoApiService, private consumoCartaService: CartaService,private route : Router) {}
 

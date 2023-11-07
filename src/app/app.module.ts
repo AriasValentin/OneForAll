@@ -38,7 +38,9 @@ import { VistaPagCartasUnkGENComponent } from './pages/vista-pag-cartas-unk-gen/
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';  
+import { MatCardModule } from '@angular/material/card';
+import { CarritoUsuarioComponent } from './components/carrito-usuario/carrito-usuario.component';
+import { CartasUsuarioComponent } from './components/cartas-usuario/cartas-usuario.component';  
 /* import { MarcoCartaComponent } from './marco-carta/marco-carta.component'; */
 
 
@@ -65,6 +67,8 @@ import { MatCardModule } from '@angular/material/card';
     VistaPagCartasMaleComponent,
     VistaPagCartasGenderlssComponent,
     VistaPagCartasUnkGENComponent,
+    CarritoUsuarioComponent,
+    CartasUsuarioComponent,
     
 
   ],

@@ -1,13 +1,10 @@
 button {
-    border-radius: 20px;
-    border: rgba(82, 58, 30, 0.687) 5px outset;
-    margin: 5px;
-    font-weight: bolder;
-    width:10em;
-    height:3em;
-    background-color: rgba(216, 165, 102, 0.871);
-    display: grid;
-    place-items: center;
+    background-color: #00ff00;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .view{ 
     background-image: url("src/app/images/pickle_rick_work.0.jpg");
@@ -35,3 +32,7 @@ p{
     border-radius: 5px;
     margin: 20px; 
 }
+.cartasUsuario {
+    text-align: center;
+    background-color: green;
+  }
