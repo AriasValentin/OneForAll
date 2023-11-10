@@ -26,7 +26,7 @@ export class ConsumoApiService {
   conseguirDatos(): Carta[] {
     let cartas: Carta[] = [];
   
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 700; i++) {
       this.getCharacter(i).subscribe(data => {
         let carta: Carta = {
           id: data.id,
@@ -48,7 +48,7 @@ export class ConsumoApiService {
   conseguirDatosAlive(): Carta[] {
     let cartas: Carta[] = [];
   
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 700; i++) {
       this.getCharacter(i).subscribe(data => {
         let carta: Carta = {
           id: data.id,
@@ -72,7 +72,7 @@ export class ConsumoApiService {
   conseguirDatosDead(): Carta[] {
     let cartas: Carta[] = [];
   
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 700; i++) {
       this.getCharacter(i).subscribe(data => {
         let carta: Carta = {
           id: data.id,
@@ -95,7 +95,7 @@ export class ConsumoApiService {
   conseguirDatosUnknown(): Carta[] {
     let cartas: Carta[] = [];
   
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 700; i++) {
       this.getCharacter(i).subscribe(data => {
         let carta: Carta = {
           id: data.id,
@@ -114,6 +114,8 @@ export class ConsumoApiService {
     } 
     return cartas;
   }
+
+/* FUNCIONES QUE NO SE USAN PERO POR SI LAS DUDAS YA ESTAN.
 
 
   conseguirDatosFemale(): Carta[] {
@@ -211,5 +213,6 @@ export class ConsumoApiService {
     } 
     return cartas;
   }
+  */
 }
 
