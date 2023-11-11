@@ -40,7 +40,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { CarritoUsuarioComponent } from './components/carrito-usuario/carrito-usuario.component';
-import { CartasUsuarioComponent } from './components/cartas-usuario/cartas-usuario.component';  
+import { CartasUsuarioComponent } from './components/cartas-usuario/cartas-usuario.component';
+import { NavArticulosComponent } from './components/nav-articulos/nav-articulos.component';  
 /* import { MarcoCartaComponent } from './marco-carta/marco-carta.component'; */
 
 
@@ -69,6 +70,7 @@ import { CartasUsuarioComponent } from './components/cartas-usuario/cartas-usuar
     VistaPagCartasUnkGENComponent,
     CarritoUsuarioComponent,
     CartasUsuarioComponent,
+    NavArticulosComponent,
     
 
   ],
