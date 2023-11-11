@@ -10,6 +10,7 @@ import { Usuario } from 'src/app/modules/usuario';
 })
 export class CarritoUsuarioComponent implements OnInit{
   
+  
   cartas:Carta[]=[];
   usuario: Usuario = {
     nombre : '',
@@ -22,6 +23,7 @@ export class CarritoUsuarioComponent implements OnInit{
   } 
   
   ngOnInit(): void {
+  
     let login = sessionStorage.key(0);//login tiene la unica key que se guarda
     if(login){
       let jsonsting = sessionStorage.getItem(login);//aca se obtiene el string Json desde el sesssion
@@ -48,7 +50,13 @@ export class CarritoUsuarioComponent implements OnInit{
     sessionStorage.removeItem(this.usuario.email);
     sessionStorage.setItem(this.usuario.email, JSON.stringify(this.usuario));
 
+
+    this.refrescarPagina();
+
+   /*  localStorage.getItem(this.usuario.email); */
+
     /* hago que se elimine pero no en tiempo real. */
+
 
   }
   comprarDeseado(card : Carta){
@@ -60,6 +68,15 @@ export class CarritoUsuarioComponent implements OnInit{
     localStorage.setItem(this.usuario.email,JSON.stringify(this.usuario));
     sessionStorage.removeItem(this.usuario.email);
     sessionStorage.setItem(this.usuario.email, JSON.stringify(this.usuario));
+
+    this.refrescarPagina();
+  }
+
+  refrescarPagina() {
+    const currentUrl = this.route.url;
+    this.route.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.route.navigateByUrl(currentUrl);
+    });
   }
 
 

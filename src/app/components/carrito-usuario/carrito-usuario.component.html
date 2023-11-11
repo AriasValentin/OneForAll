@@ -1,6 +1,9 @@
+
+
+
 <div class="cartas-container">
     <div class="cartas-container">
-      <div *ngFor="let carta of cartas" class="carta">
+      <div *ngFor="let carta of cartas" class="carta" >
           <img [src]="carta.image" alt="Imagen del personaje" class="image">
           <h2>{{ carta.name }}</h2>
           <p class="parrafoImagen">Estado: {{ carta.status }}</p>
