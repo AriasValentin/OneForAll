@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validator } from '@angular/forms';
+import { FormBuilder, FormGroup, Validator, ValidatorFn, Validators } from '@angular/forms';
 import { Usuario } from 'src/app/modules/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { Carrito } from 'src/app/modules/carrito';
@@ -26,13 +26,15 @@ export class FormularioRegistroComponent   {
 
   constructor(private formUsuario : FormBuilder, private usuarioService : UsuarioService, private route : Router){
     this.forms = this.formUsuario.group({
-      nombre: '',
-      dni: '',
-      email: '',
-      contraseña:'',
-      contraseña2:'',
+      nombre: ['',[Validators.required,Validators.maxLength(20)]],
+      dni: ['',[Validators.required,Validators.minLength(7),Validators.maxLength(9)]],
+      email: ['',[Validators.required,Validators.email,Validators.minLength(5)]],
+      contraseña:['',[Validators.required]],
+      contraseña2:['',[Validators.required,]],
     })
+    this.forms.get('contraseña2')?.setValidators([Validators.required, this.passwordValidator()]);
   }
+  
   
 
   cargarUsuario(){
@@ -54,5 +56,20 @@ export class FormularioRegistroComponent   {
       this.route.navigate(['/home']);
 
   }
+
+  public passwordValidator(): ValidatorFn {
+    return () => {
+
+      const password = this.forms.get('contraseña')?.value;
+      const repeat_password = this.forms.get('contraseña2')?.value;
+
+      if(!password || !repeat_password) return { isValid: false };
+
+      if(password!==repeat_password) return {isValid:false};      
+      
+      return null;
+    };
+  }
+  
 
 }

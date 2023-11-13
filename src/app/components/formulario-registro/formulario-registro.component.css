@@ -40,3 +40,6 @@ button{
     font-size: larger;
     border-radius: 5px;
 }
+.alert{
+  background-color: rgba(210, 72, 72, 0.749);
+}
