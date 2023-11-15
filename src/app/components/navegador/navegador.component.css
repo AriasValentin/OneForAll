@@ -4,10 +4,10 @@
  
 }
 
-#navegador{
-  background-color: #97ce4c; 
+#navegador {
+  background-color: #97ce4c;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Align elements to the right */
   align-items: center;
   padding: 10px;
 }
