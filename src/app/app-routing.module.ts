@@ -16,6 +16,7 @@ import { VistaPagCartasFemaleComponent } from './pages/vista-pag-cartas-female/v
 import { VistaPagCartasMaleComponent } from './pages/vista-pag-cartas-male/vista-pag-cartas-male.component';
 import { VistaPagCartasGenderlssComponent } from './pages/vista-pag-cartas-genderlss/vista-pag-cartas-genderlss.component';
 import { VistaPagCartasUnkGENComponent } from './pages/vista-pag-cartas-unk-gen/vista-pag-cartas-unk-gen.component';
+import { authGuard } from './guards/auth.guard';
 
 
 const routes : Routes = [
@@ -26,41 +27,41 @@ const routes : Routes = [
     path: 'vistaRegisto', component: RegistroVistaComponent
   },
   {
-    path: 'vistaCartas', component: PaginaVisualizacionCartasComponent
+    path: 'vistaCartas', component: PaginaVisualizacionCartasComponent, canActivate:[authGuard],
   },
   {
     path: 'home', component: HomeInicioComponent
   },
   {
-    path: 'vistaCarrito', component: CarritoVistaComponent
+    path: 'vistaCarrito', component: CarritoVistaComponent, canActivate:[authGuard],
   },
   {
-    path: 'vistaPerfil', component: PerfilUsuarioComponent
+    path: 'vistaPerfil', component: PerfilUsuarioComponent, canActivate:[authGuard],
   },
   {
-    path: 'modificarUsuario', component: ModificarUsuarioComponent
+    path: 'modificarUsuario', component: ModificarUsuarioComponent, canActivate:[authGuard],
   },
   {
-    path: 'vistaAlive', component: VistaPagCartasAliveComponent
+    path: 'vistaAlive', component: VistaPagCartasAliveComponent, canActivate:[authGuard],
   },
   {
-    path: 'vistaDead', component: VistaPagCartasDeadComponent
+    path: 'vistaDead', component: VistaPagCartasDeadComponent, canActivate:[authGuard],
   },
   {
-    path: 'vistaUnk', component: VistaPagCartasUnknownComponent
+    path: 'vistaUnk', component: VistaPagCartasUnknownComponent, canActivate:[authGuard],
   },
 
   {
-    path: 'vistaFemale', component: VistaPagCartasFemaleComponent
+    path: 'vistaFemale', component: VistaPagCartasFemaleComponent, canActivate:[authGuard],
   },
   {
-    path: 'vistaGer', component: VistaPagCartasGenderlssComponent
+    path: 'vistaGer', component: VistaPagCartasGenderlssComponent, canActivate:[authGuard],
   },
   {
-    path: 'vistaUnkGEN', component: VistaPagCartasUnkGENComponent
+    path: 'vistaUnkGEN', component: VistaPagCartasUnkGENComponent, canActivate:[authGuard],
   },
   {
-    path: 'vistaMale', component: VistaPagCartasUnkGENComponent
+    path: 'vistaMale', component: VistaPagCartasUnkGENComponent, canActivate:[authGuard],
   },
 
 
