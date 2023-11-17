@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../../services/usuario.service';
 import { Router } from '@angular/router';
 import { Usuario } from '../../modules/usuario';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-modificar-usuario',
@@ -39,11 +39,12 @@ export class ModificarUsuarioComponent implements OnInit{
   }
   constructor(private usuarioService : UsuarioService, private route : Router, private formUsuario : FormBuilder){
     this.forms = this.formUsuario.group({
-      nombre: '',
-      dni: '',
-      contraseña:'',
-      contraseña2:'',
+      nombre: ['',[Validators.required,Validators.maxLength(20)]],
+      dni: ['',[Validators.required,Validators.minLength(7),Validators.maxLength(9)]],
+      contraseña:['',[Validators.required]],
+      contraseña2:['',[Validators.required,]],
     })
+    this.forms.get('contraseña2')?.setValidators([Validators.required, this.passwordValidator()]);
   } 
 
   setearDatos(){
@@ -61,6 +62,19 @@ export class ModificarUsuarioComponent implements OnInit{
      this.forms.reset();
      this.route.navigate(['/vistaPerfil']);
   
+  }
+  public passwordValidator(): ValidatorFn {
+    return () => {
+
+      const password = this.forms.get('contraseña')?.value;
+      const repeat_password = this.forms.get('contraseña2')?.value;
+
+      if(!password || !repeat_password) return { isValid: false };
+
+      if(password!==repeat_password) return {isValid:false};      
+      
+      return null;
+    };
   }
   
   

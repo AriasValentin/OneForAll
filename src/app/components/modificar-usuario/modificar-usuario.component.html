@@ -6,18 +6,30 @@
         <p>Nombre actual : {{usu.nombre}}</p>
         <label for="nombre"> Nombre de Usuario </label>
         <input type="text" id="nombre" formControlName="nombre" required>
+        <div class="alert" [hidden]="this.forms.get('nombre')?.valid || this.forms.get('nombre')?.pristine">
+            el nombre es obligatorio
+        </div> 
         <br>
         <p>DNI actual : {{usu.dni}}</p>
         <label for="dni"> DNI </label>
         <input type="number" id="dni" formControlName="dni" required>
+        <div class="alert" [hidden]="this.forms.get('dni')?.valid || this.forms.get('dni')?.pristine">
+            el DNI es obligatorio
+        </div> 
         <br>
         <p>En caso de desear cambiar su contraseña escriba una nueva contraseña a continuacion</p>
         <label for="contraseña"> Contraseña </label>
         <input type="password" id="contraseña" formControlName="contraseña"  required>
+        <div class="alert" [hidden]="this.forms.get('contraseña')?.valid || this.forms.get('contraseña')?.pristine">
+            la contraseña es obligatoria
+         </div> 
         <br>
         <label for="contraseña2"> Repita su contraseña </label>
         <input type="password" id="contraseña2" formControlName="contraseña2" required>
+        <div class="alert" [hidden]="this.forms.get('contraseña2')?.valid || this.forms.get('contraseña2')?.pristine">
+            por favor reescriba la contraseña
+        </div> 
         <br>
-        <button type="submit"> Guardar Cambios</button>
+        <button type="submit" [disabled]="!forms.valid"> Guardar Cambios</button>
     </form>
  </div>
