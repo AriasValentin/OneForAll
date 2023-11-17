@@ -48,13 +48,19 @@ export class FormularioRegistroComponent   {
     cartasCompradas :[],
     carrito : {articulos:[],precioTotal :0}
     }
-    
-      console.log(usuarioRegistro);
-      this.usuarioService.agregarUsuario(usuarioRegistro);
-      localStorage.setItem(usuarioRegistro.email, JSON.stringify(usuarioRegistro));
-      this.forms.reset();
+       let usuarioExistente  = localStorage.getItem(usuarioRegistro.email);
+      if(usuarioExistente == null){
+        console.log(usuarioRegistro);
+        this.usuarioService.agregarUsuario(usuarioRegistro);
+        localStorage.setItem(usuarioRegistro.email, JSON.stringify(usuarioRegistro));
+        this.forms.reset();
+        
+      }
+      else{
+        alert('el usuario ya se encuentra');
+      }
+      
       this.route.navigate(['/home']);
-
   }
 
   public passwordValidator(): ValidatorFn {
